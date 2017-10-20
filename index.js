@@ -28,9 +28,13 @@ const romanNumeralToDecimal = (romanNums) => {
         return -1;
     }
 
+    // Iterating through the String char by char converting each numeral to its
+    // decimal equivalent with consideration for subtractive notation
     for (let i = 0; i < romanNums.length; i++) {
+        // boolean checking there is a subsequent char and it is within the romanNumeralMap
+        let nextCharIsValid = romanNums[i + 1] && romanNumeralMap[romanNums[i + 1]];
 
-        if (romanNums[i + 1] && (romanNumeralMap[romanNums[i + 1]] > romanNumeralMap[romanNums[i]])) {
+        if (nextCharIsValid && (romanNumeralMap[romanNums[i + 1]] > romanNumeralMap[romanNums[i]])) {
             total += romanNumeralMap[romanNums[i + 1]] - romanNumeralMap[romanNums[i]];
             i++;
         } else if (romanNumeralMap[romanNums[i]]) {
