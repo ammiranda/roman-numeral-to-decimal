@@ -20,8 +20,10 @@ const romanNumeralMap = {
  */
 const romanNumeralToDecimal = (romanNums) => {
     
+    // Variable holding the numerical total of the inputted string
     let total = 0;
 
+    // Checking if the input is of expected type (String) and contains characters
     if (typeof romanNums !== 'string' || romanNums.length === 0) {
         return -1;
     }
