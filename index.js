@@ -42,7 +42,3 @@ const romanNumeralToDecimal = (romanNums) => {
 }
 
 module.exports = romanNumeralToDecimal;
-
-console.log(romanNumeralToDecimal('XLVI'));
-console.log(romanNumeralToDecimal('aX'));
-console.log(romanNumeralToDecimal('XII'));
