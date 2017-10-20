@@ -8,6 +8,11 @@ describe('romanNumeralToDecimal invalid input test cases', () => {
 
     it('should return -1 when input contains a non-Roman numeral', () => {
         expect(romanNumeralToDecimal('aX')).to.equal(-1);
+        expect(romanNumeralToDecimal('XXa')).to.equal(-1);
+    });
+
+    it('should return -1 when input is a non-String', () => {
+        expect(romanNumeralToDecimal(5)).to.equal(-1);
     });
 });
 

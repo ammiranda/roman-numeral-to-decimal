@@ -5,7 +5,7 @@ This is a simple module that takes a single string input that represents a Roman
 ## Install
 
 ```console
-$ npm install romannumeralconvert
+$ npm install roman-numeral-to-decimal
 ```
 
 ## Usage
@@ -13,9 +13,9 @@ $ npm install romannumeralconvert
 Simply pass in a String of Roman numerals and see the decimal number returned! If invalid input is passed into the first argument the function will return -1. Subsequent arguments passed into the function will be ignored/unused.
 
 ```javascript
-const romanNumeralConvert = require('romannumeralconvert');
+const romanNumeralToDecimal = require('roman-numeral-to-decimal');
 
-romanNumeralConvert('MCMLXXXVII') // returns the number 1987
+romanNumeralToDecimal('MCMLXXXVII') // returns the number 1987
 ```
 
 ## Test

@@ -1,5 +1,5 @@
 {
-  "name": "romannumeralconvert",
+  "name": "roman-numeral-to-decimal",
   "version": "1.0.0",
   "description": "A module that converts a string of Roman numerals into its decimal equivalent",
   "main": "index.js",
